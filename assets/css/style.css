@@ -15,7 +15,7 @@
 
   padding: 40px;
 
-  background: #000 url(../img/bg.png) repeat;
+  background: #000 url("../img/bg.png") repeat;
 
   font-family: "Geneva", Arial, Helvetica, sans-serif;
 }
@@ -29,6 +29,7 @@
   padding: 20px;
 
   width: 65vw;
+  min-width: 500px;
   min-height: 90vh;
 
   background-color: #fff;
@@ -51,12 +52,16 @@
 }
 
 .intro {
-  margin: 0 25px 25px 25px;
+  margin: 0 25px 5px 25px;
 }
 
 .intro__text {
   text-indent: 2rem;
   font-size: 1.2rem;
+}
+
+.main-navigation {
+  margin-left: 60px;
 }
 
 .main-navigation__list {
@@ -96,7 +101,7 @@
 
 .additional-material__list {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: flex-start;
 
   list-style: none;
@@ -141,6 +146,7 @@
 }
 
 .main-footer {
+  min-width: 500px;
   width: 65vw;
   margin: 0 auto;
   padding: 20px 0;
