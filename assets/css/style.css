@@ -12,6 +12,8 @@
   padding: 40px;
 
   background: #000 url(../img/bg.png) repeat;
+
+  font-family: "Geneva", Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -20,9 +22,18 @@
   align-items: center;
 
   margin: 0 auto;
+  padding: 20px;
 
-  width: 85vw;
+  width: 65vw;
   min-height: 90vh;
 
   background-color: #fff;
+  box-shadow: 0 0 80px rgb(14, 7, 7);
+}
+
+.main-title {
+  margin: 0 0 10px 0;
+
+  font-size: 2.2rem;
+  color: rgb(199, 98, 5);
 }
