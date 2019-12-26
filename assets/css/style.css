@@ -302,6 +302,11 @@ caption {
   flex-flow: row wrap;
 }
 
+iframe {
+  width: 900px;
+  height: 450px;
+}
+
 @media (max-width: 767px) {
   .graphic-description {
     flex-direction: column;
@@ -310,6 +315,18 @@ caption {
 
   .graphic-interfaces__image {
     width: 90%;
+  }
+
+  iframe {
+    width: 450px;
+    height: 225px;
+  }
+}
+
+@media(max-width: 991px) {
+  iframe {
+    width: 550px;
+    height: 275px;
   }
 }
 
