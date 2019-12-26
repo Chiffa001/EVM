@@ -1,23 +1,31 @@
 :root {
   --color-orange: rgb(199, 98, 5);
+  --color-main-title: rgb(102, 76, 4);
+  --color-green: rgb(116, 161, 48);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
 
   box-sizing: border-box;
 }
 
+body {
+  min-width: 650px;
+}
+
 .wrapper {
   width: 100%;
-  min-height: 100vh;  
+  min-width: 650px;
+  min-height: 90vh;
+  padding: 20px 0;
 
-  padding: 40px;
+  background: #000 url("../img/bg.png") repeat;
 
-  background: #000 url(../img/bg.png) repeat;
-
-  font-family: "Geneva", Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -28,17 +36,27 @@
   margin: 0 auto;
   padding: 20px;
 
-  width: 65vw;
+  min-width: 576px;
+}
+
+/* @media(max-width: 576px) {
+  .container {
+    padding: 0;
+  }
+} */
+
+.main {
   min-height: 90vh;
 
   background-color: #fff;
   box-shadow: 0 0 80px rgb(14, 7, 7);
 }
 
-.main-title {
+.main__title {
   margin: 0 0 10px 0;
 
   font-size: 2.2rem;
+  text-align: center;
   color: var(--color-orange);
 }
 
@@ -50,17 +68,46 @@
   margin: -1px;
 }
 
-.intro {
-  margin: 0 25px 25px 25px;
-}
+.intro,
+.type,
+.history {
+  margin: 0 25px 5px 25px;
 
-.intro__text {
-  text-indent: 2rem;
   font-size: 1.2rem;
 }
 
+@media (max-width: 767px) {
+  .intro,
+  .type,
+  .history {
+    width: 500px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro,
+  .type,
+  .history {
+    width: 500px !important;
+  }
+}
+
+.intro__text,
+.type__text,
+.history__text {
+  text-indent: 2rem;
+}
+
+.intro__list {
+  margin: 10px 100px;
+}
+
+.main-navigation {
+  margin-left: 60px;
+}
+
 .main-navigation__list {
-  list-style-image: url(../img/arrow.png);
+  list-style-image: url("../img/arrow.png");
 
   color: rgb(78, 68, 68);
 }
@@ -96,7 +143,7 @@
 
 .additional-material__list {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: flex-start;
 
   list-style: none;
@@ -104,7 +151,7 @@
   font-size: 1.2rem;
 }
 
-.additional-material__item {  
+.additional-material__item {
   max-width: 160px;
   margin-left: 75px;
 }
@@ -122,7 +169,7 @@
 
 .video::before,
 .literature::before {
-  content: '';
+  content: "";
 
   position: absolute;
   top: -3px;
@@ -132,7 +179,7 @@
   height: 48px;
 }
 
-.video::before { 
+.video::before {
   background-image: url("../img/ico_video.png");
 }
 
@@ -141,10 +188,6 @@
 }
 
 .main-footer {
-  width: 65vw;
-  margin: 0 auto;
-  padding: 20px 0;
-
   background-color: rgb(209, 209, 209);
 
   font-size: 1.1rem;
@@ -153,13 +196,125 @@
 .info {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;  
+  justify-content: center;
 }
 
-.col:last-child {
+.my-col:last-child {
   margin-left: 20px;
 }
 
 .address {
   text-align: center;
+}
+
+.types-mice__title,
+.interfaces-mice__title,
+.history__title,
+.type__title {
+  text-align: center;
+}
+
+.types-mice__title,
+.interfaces-mice__title,
+.history__title {
+  color: var(--color-main-title);
+}
+
+.type__title {
+  color: var(--color-orange);
+}
+
+.type__list {
+  list-style-position: inside;
+}
+
+.inner__list {
+  margin-left: 30px;
+}
+
+.type__text--green {
+  color: var(--color-green);
+}
+
+.col--center {
+  text-align: center;
+}
+
+dd {
+  margin-left: 2rem;
+}
+
+.shell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shell > img {
+  width: 30%;
+}
+
+.image {
+  width: 20%;
+  margin-right: 20px;
+}
+
+.big-image {
+  width: 40%;
+}
+
+@media (max-width: 767px) {
+  .image {
+    width: 50%;
+  }
+
+  .big-image {
+    width: 70%;
+  }
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+@media (max-width: 767px) {
+  .shell > img {
+    width: 50%;
+  }
+}
+
+/* @media(max-width: 568px) {
+  .shell > img {
+    width: 70%;
+  }
+} */
+
+caption {
+  text-align: center;
+}
+
+.ports {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@media (max-width: 767px) {
+  .graphic-description {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .graphic-interfaces__image {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .graphic-interfaces {
+    width: 576px;
+  }
 }
