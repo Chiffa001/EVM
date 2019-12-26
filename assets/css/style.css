@@ -48,7 +48,7 @@ body {
 .main {
   min-height: 90vh;
 
-  background-color: #fff; 
+  background-color: #fff;
   box-shadow: 0 0 80px rgb(14, 7, 7);
 }
 
@@ -228,6 +228,10 @@ body {
   list-style-position: inside;
 }
 
+.inner__list {
+  margin-left: 30px;
+}
+
 .type__text--green {
   color: var(--color-green);
 }
@@ -259,7 +263,7 @@ dd {
   width: 40%;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .image {
     width: 50%;
   }
@@ -277,7 +281,7 @@ dd {
   float: right;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .shell > img {
     width: 50%;
   }
@@ -306,11 +310,11 @@ caption {
 
   .graphic-interfaces__image {
     width: 90%;
-  }    
+  }
 }
 
 @media (max-width: 576px) {
   .graphic-interfaces {
     width: 576px;
-  }  
+  }
 }

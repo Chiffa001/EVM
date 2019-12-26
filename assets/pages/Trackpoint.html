@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="../img/mouse.png" type="image/x-icon" />
     <link
-      rel="shortcut icon"
-      href="../img/mouse.png"
-      type="image/x-icon"
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" />
     <title>Трекпоинт</title>
   </head>
@@ -19,64 +20,67 @@
         <h1 class="main__title">Трекпоинт</h1>
         <section class="intro">
           <h2 class="visually-hidden">Введение</h2>
-          <p>
+          <div class="shell">
+            <img src="../img/track-point1.jpg" alt="track-point1">
+          </div>
+          <p class="intro__text">
             Pointing stick (также известен под названиями TrackPoint,
             PointStick, Track Stick, StickPoint и другими) — миниатюрный
             тензометрический джойстик, применяемый в ноутбуках как замена мыши.
           </p>
         </section>
-        <section>
-          <h2>История</h2>
-          <p>
+        <section class="history">
+          <h2 class="history__title">История</h2>
+          <p class="history__text">
             Pointing stick был изобретён ученым-исследователем Тедом Зелькером
             (англ. Ted Selker). Pointing stick зарегистрирован компанией IBM под
             торговой маркой TrackPoint.
           </p>
         </section>
-        <section>
-          <h2>Устройство</h2>
-          <p>
+        <section class="type">
+          <h2 class="type__title">Устройство</h2>
+          <p class="type__text">
             Обычно джойстик имеет заменяемый резиновый кожух. На лэптопах
             ThinkPad он красный, другие производители используют другие цвета.
             Кожух часто делают из слегка шершавого материала.
           </p>
-          <p>
+          <p class="type__text">
             На клавиатуре формата QWERTY джойстик размещен между клавиш «G», «H»
             и «B», а кнопки мыши размещены под клавишей «пробел».
           </p>
-          <p>
+          <p class="type__text">
             Кнопки мыши обычно нажимаются большим пальцем правой руки, но
             некоторые люди используют для этого пальцы обеих рук, для 1-й и 3-й
             кнопок соответственно.
           </p>
-          <p>
+          <p class="type__text">
             Курсор управляется определением примененной силы (отсюда и название
             тензометрический джойстик), для этого используется пара резистивных
             датчиков деформации (резистивных тензодатчиков). Вектор перемещения
             курсора определяется в соответствии с примененной силой.
           </p>
         </section>
-        <section>
-          <h2>Характеристики</h2>
-          <p>
+        <section class="type">
+          <h2 class="type__title">Характеристики</h2>
+          <p class="type__text">
             Чувствительность TrackPoint обычно настраиваемая и может быть
             установлена так, чтобы предоставлять крайне легкую степень отклика.
           </p>
-          <p>
+          <p class="type__text">
             Нажатие для выбора (Press-to-select) — это дополнительная функция,
             когда четкое нажатие на джойстик эквивалентно нажатию кнопки.
             Кнопка+ нажатие которой передается, может быть сконфигурирована 1-й,
             2-й или 3-й. Однако, легко случайно нажать на джойстик во время
             печати.
           </p>
-          <p>
+          <p class="type__text">
             Вместе с программной эмуляцией колесика мыши, TrackPoint может
             предоставлять полное поведение 3-х кнопочной мыши с 2-я колесиками
             прокрутки. Нажатие кнопки 2 создает щелчок средней кнопки, удержание
             кнопки 2 во время одновременно перемещения курсора создаст события
             вертикальной и горизонтальной прокрутки.
           </p>
-          <p>
+          <p class="type__text">
             TrackPoint III и TrackPoint IV имеют функцию называемую
             «Отрицательная инерция», которая заставляет вектор перемещения
             курсора быть «излишне восприимчивым», когда вектор перемещения
@@ -85,14 +89,35 @@
             включенной функцией Negative Inertia, чем когда она отключена.
           </p>
         </section>
-        <div>
-          <h2>Известные проблемы</h2>
-          <p>
-            Дрейф курсора является повсеместной проблемой среди указателей данного типа, требующей частой повторной калибровки. Однако устройства TrackPoint автоматически проводят повторную калибровку когда джойстик распознает постоянный дрейф курсора. Для того чтобы провести повторную калибровку достаточно убрать палец с TrackPoint примерно на 1 секунду.
+        <section class="type">
+          <h2 class="type__title">Известные проблемы</h2>
+          <p class="type__text">
+            Дрейф курсора является повсеместной проблемой среди указателей
+            данного типа, требующей частой повторной калибровки. Однако
+            устройства TrackPoint автоматически проводят повторную калибровку
+            когда джойстик распознает постоянный дрейф курсора. Для того чтобы
+            провести повторную калибровку достаточно убрать палец с TrackPoint
+            примерно на 1 секунду.
+          </p>
+        </section>
+      </div>
+      <footer class="container main-footer">
+        <div class="info">
+          <p class="my-col">
+            Руководитель:
+            <span class="teacher">
+              Прудников В.М.
+            </span>
+          </p>
+          <p class="my-col">
+            Исполнители: <span>Наконечный А.В. и Ивашнёв М.И.</span>
           </p>
         </div>
-      </div>
-      <div class="footer"></div>
+        <address class="address">
+          Белорусско-Российский университет, кафедра "Автоматизированные системы
+          управления" © 2019
+        </address>
+      </footer>
     </div>
   </body>
 </html>
