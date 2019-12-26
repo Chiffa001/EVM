@@ -36,6 +36,8 @@ body {
   margin: 0 auto;
   padding: 20px;
 
+  position: relative;
+
   min-width: 576px;
 }
 
@@ -334,4 +336,10 @@ iframe {
   .graphic-interfaces {
     width: 576px;
   }
+}
+
+.go-home {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
