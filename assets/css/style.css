@@ -36,6 +36,8 @@ body {
   margin: 0 auto;
   padding: 20px;
 
+  position: relative;
+
   min-width: 576px;
 }
 
@@ -228,6 +230,10 @@ body {
   list-style-position: inside;
 }
 
+.type__link {
+  color: inherit;
+}
+
 .inner__list {
   margin-left: 30px;
 }
@@ -302,6 +308,11 @@ caption {
   flex-flow: row wrap;
 }
 
+iframe {
+  width: 900px;
+  height: 450px;
+}
+
 @media (max-width: 767px) {
   .graphic-description {
     flex-direction: column;
@@ -311,10 +322,28 @@ caption {
   .graphic-interfaces__image {
     width: 90%;
   }
+
+  iframe {
+    width: 450px;
+    height: 225px;
+  }
+}
+
+@media(max-width: 991px) {
+  iframe {
+    width: 550px;
+    height: 275px;
+  }
 }
 
 @media (max-width: 576px) {
   .graphic-interfaces {
     width: 576px;
   }
+}
+
+.go-home {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
