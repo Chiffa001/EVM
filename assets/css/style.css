@@ -363,3 +363,12 @@ iframe {
   text-align: center;
   color: var(--color-green);
 }
+
+.h-plus-plus {
+  justify-content: space-around;
+  height: 35vh;
+}
+
+.flex-center {
+  align-items: center;
+}
