@@ -37,8 +37,13 @@
             Устройство мыши передаёт в систему информацию о своём перемещении по
             поверхности и нажатии кнопок.
           </p>
-          <div class="big-shell">
-            <img src="../img/scheme.png" alt="scheme" />
+          <div class="d-flex flex-column flex-center">
+            <div class="big-shell">
+              <img src="../img/scheme.png" alt="scheme" />
+            </div>
+            <p class="type__text">
+              Схема 1 - Структурная схема манипулятора типа «мышь»
+            </p>
           </div>
           <p class="intro__text">
             Несмотря на внешнее разнообразие, все мыши работают одинаково.
@@ -208,14 +213,18 @@
               схемами датчиков.
             </p>
             <figure class="d-flex flex-column flex-center">
-                <div class="d-flex flex-column flex-center">
-                  <img src="../img/scheme-mech.png" alt="scheme-15">
-                  <p class="type__text">Рисунок - Принцип действия оптомеханической мыши</p>
-                </div>     
-                <div class="w-50 d-flex flex-column flex-center">
-                  <img src="../img/prerivatel.png" alt="jajaja">
-                  <p class="type__text">Рисунок - Принцип работы прерывателя мыши</p>
-                </div>              
+              <div class="d-flex flex-column flex-center">
+                <img src="../img/scheme-mech.png" alt="scheme-15" />
+                <p class="type__text">
+                  Схема 2 - Принцип действия оптомеханической мыши
+                </p>
+              </div>
+              <div class="w-50 d-flex flex-column flex-center">
+                <img src="../img/prerivatel.png" alt="jajaja" />
+                <p class="type__text">
+                  Схема 3 - Принцип работы прерывателя мыши
+                </p>
+              </div>
             </figure>
             <p class="type__text">
               Существует два варианта датчиков для шарового привода:
@@ -327,9 +336,9 @@
             </p>
             <div class="d-flex flex-column flex-center">
               <div class="big-shell w-100">
-                <img src="../img/scheme-sensor.png" alt="sensor scheme">                
+                <img src="../img/scheme-sensor.png" alt="sensor scheme" />
               </div>
-              <p class="type__text">Рисунок - Схема работы оптосенсорной мыши</p>
+              <p class="type__text">Схема 4 - Работа оптосенсорной мыши</p>
             </div>
             <p class="type__text">
               Оптические мыши второго поколения имели огромное преимущество
@@ -350,6 +359,45 @@
               лазер. Это позволяет значительно увеличить её точность и снизить
               энергопотребление.
             </p>
+            <div>
+              <div class="big-shell">
+                <img src="../img/laser-sensor.png" alt="laser-sensor" />
+              </div>
+              <p class="type__text text-center">
+                Схема 5 - устройство лазерного сенсора
+              </p>
+            </div>
+            <p class="type__text">
+              Источником света служит не светодиод, а полупроводниковый лазер,
+              который работает в невидимом для человеческого глаза инфракрасном
+              диапазоне (длина волны — 832-852 нм), так что привычного свечения
+              под корпусом работающего манипулятора в данном случае нет.
+            </p>
+            <p class="type__text">
+              Основное преимущество лазера заключается в том, что излучаемый им
+              свет имеет когерентную природу — это позволяет получить гораздо
+              более контрастное и детальное изображение поверхности, а также
+              оптическая ось объектива видеокамеры расположена под таким же
+              углом, под каким свет от источника падает на рабочую поверхность.
+              Таким образом, видеокамера лазерного сенсора считывает не
+              рассеянный, а отраженный от поверхности свет.
+            </p>
+            <p class="type__text">
+              Лазерный сенсор позволил:
+            </p>
+
+            <ul class="type__list">
+              <li class="type__item">
+                обеспечить стабильную работу датчика на гладких поверхностях,
+                имеющих очень слабо выраженный микрорельеф — то есть там, где
+                оптические датчики традиционной конструкции ведут себя
+                нестабильно или вовсе перестают функционировать;
+              </li>
+              <li class="type__item">
+                значительно повысить разрешающую способность сенсора (и
+                соответственно, точность регистрации перемещений.
+              </li>
+            </ul>
           </section>
 
           <section class="type">
@@ -358,9 +406,15 @@
               <img src="../img/indect-mouse.jpg" alt="induct-mouse" />
             </div>
             <p class="type__text">
+              Индукционная мышь по своему строению мало чем отличается от обыкновенной беспроводной оптической мыши, кроме отсутствия элементов питания в составе корпуса.
+            </p>
+            <p class="type__text">
+              Отличительной же особенностью является необычная для такого радио-устройства антенна. Она выполнена проводом очень небольшого сечения в виде рамки состоящей из множества витков. Обычно, антенны в радио мышках состоят из одного неполного витка гораздо большего сечения, либо вытравливаются непосредственно на самой печатной плате устройства.
+            </p>
+            <p class="type__text">
               Индукционные мыши используют специальный коврик, работающий по
               принципу графического планшета или собственно входят в комплект
-              графического планшета. Некоторые планщеты имеют в своём составе
+              графического планшета. Некоторые планшеты имеют в своём составе
               манипулятор, похожий на мышь со стеклянным перекрестием,
               работающий по тому же принципу, однако немного отличающийся
               реализацией, что позволяет достичь повышенной точности
@@ -387,7 +441,7 @@
             </p>
           </section>
 
-          <section class="type">
+          <!-- <section class="type">
             <h3 class="type__title" id="mouse__gyroscopic">
               Мышь гироскопическая
             </h3>
@@ -399,7 +453,7 @@
               поверхности, но и в пространстве: её можно взять со стула и
               управлять движением кисти в воздухе.
             </p>
-          </section>
+          </section> -->
         </article>
 
         <article class="interfaces-mice">
@@ -427,60 +481,65 @@
               поступает непосредственно через шину и не связан с COM-портами и
               прерываниями.
             </p>
-            <div class="graphic-description bus-description d-flex">
-              <div class="shell col-5">
-                <img
-                  class="graphic-description__image"
-                  src="../img/bus-mouse.png"
-                  alt="шинный интерфейс"
-                />
+            <div>
+              <p class="type__text text-center text-center--orange">
+                Рисунок ххх и Таблица 1 - Разъем Bus Mouse
+              </p>
+              <div class="graphic-description bus-description d-flex">
+                <div class="shell col-5 flex-column">
+                  <img
+                    class="graphic-description__image"
+                    src="../img/bus-mouse.png"
+                    alt="шинный интерфейс"
+                  />
+                </div>
+                <table class="graphic-description__table table table-sm col-7">
+                  <thead>
+                    <tr class="table__row">
+                      <th>Контакт</th>
+                      <th>Сигналы Bus Mouse</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>V<sub>cc</sub>+5 B</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>X<sub>a</sub> – датчик X</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>X<sub>b</sub> – датчик X</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Y<sub>a</sub> – датчик Y</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Y<sub>b</sub> – датчик Y</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>L<sub>b</sub> – левая кнопка</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>M<sub>b</sub> – средняя кнопка</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>R<sub>b</sub> – правая кнопка</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>GND</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <table class="graphic-description__table table table-sm col-7">
-                <thead>
-                  <tr class="table__row">
-                    <th>Контакт</th>
-                    <th>Сигналы Bus Mouse</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>V<sub>cc</sub>+5 B</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>X<sub>a</sub> – датчик X</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>X<sub>b</sub> – датчик X</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>Y<sub>a</sub> – датчик Y</td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>Y<sub>b</sub> – датчик Y</td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>L<sub>b</sub> – левая кнопка</td>
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td>M<sub>b</sub> – средняя кнопка</td>
-                  </tr>
-                  <tr>
-                    <td>8</td>
-                    <td>R<sub>b</sub> – правая кнопка</td>
-                  </tr>
-                  <tr>
-                    <td>9</td>
-                    <td>GND</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </section>
 
@@ -542,6 +601,9 @@
             </p>
             <div class="graphic-description serial-description">
               <table class="graphic-description__table table table-sm">
+                <caption>
+                  Таблица 2 - Serial Mouse
+                </caption>
                 <thead>
                   <tr>
                     <th>Контакт DB9</th>
@@ -618,16 +680,26 @@
                 </tbody>
               </table>
               <figure class="graphic-interfaces ports">
-                <img
-                  class="graphic-interfaces__image"
-                  src="../img/DB9.png"
-                  alt="db9"
-                />
-                <img
-                  class="graphic-interfaces__image"
-                  src="../img/DB25.png"
-                  alt="db25"
-                />
+                <div class="">
+                  <img
+                    class="graphic-interfaces__image"
+                    src="../img/DB9.png"
+                    alt="db9"
+                  />
+                  <p class="type__text text-center">
+                    Рисунок ххх - интерфейс db-9
+                  </p>
+                </div>
+                <div class="">
+                  <img
+                    class="graphic-interfaces__image"
+                    src="../img/DB25.png"
+                    alt="db25"
+                  />
+                  <p class="type__text text-center">
+                    Рисунок ххх - интерфейс db-25
+                  </p>
+                </div>
               </figure>
               <table class="graphic-description__table table">
                 <caption>
@@ -835,14 +907,14 @@
                 Serial Mouse или PS/2-Mouse.
               </li>
             </ul>
+            <p class="type__text text-center text-center--orange">
+              Рисунок ххх и таблица 5 - Разъем PS/2
+            </p>
             <div class="graphic-description d-flex">
               <div class="shell col-5">
                 <img src="../img/PS-2.png" alt="PS/2" />
               </div>
               <table class="gpaphic-description__table table table-sm col-7">
-                <caption>
-                  Таблица - PS/2
-                </caption>
                 <thead>
                   <tr>
                     <th>Контакт</th>
