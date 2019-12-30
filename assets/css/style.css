@@ -134,6 +134,10 @@ body {
   text-decoration: none;
 }
 
+.inner-navigation__item > .inner-navigation__link {
+  font-size: 1.2rem;
+}
+
 .main-navigation__link:hover,
 .inner-navigation__link:hover {
   text-decoration: underline;
@@ -240,7 +244,8 @@ body {
   margin-left: 30px;
 }
 
-.type__text--green {
+.type__text--green,
+.intro__text--green {
   color: var(--color-green);
 }
 
